@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Update User Details Form</h2>
+<form action="http://localhost:8080/api/users/update/1" method="post" enctype="multipart/form-data">
+    <label for="userUpdateRequest">User Update Request:</label><br>
+    <textarea id="userUpdateRequest" name="userUpdateRequest">
+  {
+    "fullName": "John Doe",
+    "country": "USA",
+    "state": "California",
+    "lgaCityZipcode": "90001",
+    "phoneNumber": "1234567890",
+    "companyName": "Acme Inc."
+  }
+  </textarea><br>
+    <label for="companyLogo">Company Logo:</label><br>
+    <input type="file" id="companyLogo" name="companyLogo"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
